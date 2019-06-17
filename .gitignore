@@ -1,0 +1,33 @@
+# IDE/Editor files
+.idea
+.ensime
+.ensime_cache/
+scorex.yaml
+.DS_Store
+
+# scala build folders
+target
+classes
+
+# dotfiles
+.dockerignore
+.editorconfig
+
+# logs
+*.log
+
+# compressed files
+*.zip
+
+# db files
+*.data
+.history
+
+# for temporary experiments
+sheet.scala
+examples/src/main/scala/examples/sigmastate/
+examples/lib/
+keyfiles/
+dumps/
+
+docker/project-bifrost-assembly-0.1.1-alpha.jar
