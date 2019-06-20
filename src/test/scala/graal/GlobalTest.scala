@@ -6,7 +6,7 @@ import org.scalatest.{Matchers, PropSpec}
 /**
   * GraalJS defines a global 'Graal' object
   */
-class GlobalTests extends PropSpec with Matchers{
+class GlobalTest extends PropSpec with Matchers{
 
   val context: Context = Context.create("js")
 

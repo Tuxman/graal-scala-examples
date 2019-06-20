@@ -10,7 +10,7 @@ import org.scalatest.{Matchers, PropSpec}
   * Print a JSON representation of a JavaScript AST using GraalJSParserHelper
   * to build the script environment and pass to JSONWriter.
   */
-class ParserHelper extends PropSpec with Matchers {
+class GraalJSParserHelperTest extends PropSpec with Matchers {
 
   val script: String =
     s"""
