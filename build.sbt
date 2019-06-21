@@ -11,6 +11,9 @@ libraryDependencies += "org.graalvm.js" % "js" % "19.0.0"
 // https://mvnrepository.com/artifact/org.graalvm.truffle/truffle-api
 libraryDependencies += "org.graalvm.truffle" % "truffle-api" % "19.0.0"
 
+//https://mvnrepository.com/artifact/org.graalvm.truffle/truffle-dsl-processor
+libraryDependencies += "org.graalvm.truffle" % "truffle-dsl-processor" % "19.0.0"
+
 lazy val testingDependencies = Seq(
   "org.scalactic" %% "scalactic" % "3.0.+",
   "org.scalatest" %% "scalatest" % "3.0.+" % "test",
