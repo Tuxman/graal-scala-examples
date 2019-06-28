@@ -1,5 +1,5 @@
 
-name := "graal-examples"
+name := "graal-scala-examples"
 scalaVersion := "2.12.7"
 
 // https://mvnrepository.com/artifact/org.graalvm.sdk/graal-sdk
@@ -14,6 +14,9 @@ libraryDependencies += "org.graalvm.truffle" % "truffle-api" % "19.0.0"
 //https://mvnrepository.com/artifact/org.graalvm.truffle/truffle-dsl-processor
 libraryDependencies += "org.graalvm.truffle" % "truffle-dsl-processor" % "19.0.0"
 
+// https://mvnrepository.com/artifact/org.graalvm.tools/profiler
+libraryDependencies += "org.graalvm.tools" % "profiler" % "19.0.2"
+
 lazy val testingDependencies = Seq(
   "org.scalactic" %% "scalactic" % "3.0.+",
   "org.scalatest" %% "scalatest" % "3.0.+" % "test",
@@ -23,6 +26,13 @@ lazy val testingDependencies = Seq(
 libraryDependencies ++= testingDependencies
 
 scalacOptions ++= Seq("-feature", "-deprecation")
+
+javaOptions ++= Seq(
+  "-XX:+UnlockExperimentalVMOptions",
+  "-XX:+EnableJVMCI",
+  "-XX:+UseJVMCICompiler",
+  "-Dtruffle.class.path.append=lib/graal-java-examples-1.0.jar"
+)
 
 parallelExecution := true
 
