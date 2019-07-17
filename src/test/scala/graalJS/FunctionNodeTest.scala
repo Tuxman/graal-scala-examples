@@ -1,0 +1,5 @@
+package graalJS
+
+class FunctionNodeTest {
+
+}
