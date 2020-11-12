@@ -1,9 +1,9 @@
 package graal
 
 import org.graalvm.polyglot.Context
-import org.scalatest.FlatSpec
+import org.scalatest.FreeSpec
 
-class MultiLangTest extends FlatSpec {
+class MultiLangTest extends FreeSpec {
 
   val pyre = Context.newBuilder().allowAllAccess(true).build
 

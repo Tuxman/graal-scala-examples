@@ -2,7 +2,7 @@ package graalJS
 
 
 import com.oracle.truffle.js.parser.GraalJSParserHelper
-import com.oracle.truffle.js.runtime.{GraalJSParserOptions, JSTruffleOptions}
+import com.oracle.truffle.js.runtime.{JSParserOptions, JSTruffleOptions}
 import org.scalatest.{Matchers, PropSpec}
 
 
@@ -24,7 +24,7 @@ class GraalJSParserHelperTest extends PropSpec with Matchers {
 
 
 
-  val graalsJSParserOptions: GraalJSParserOptions = new GraalJSParserOptions()
+  val graalsJSParserOptions: JSParserOptions = new JSParserOptions()
     .putStrict(true)
     .putScripting(false)
     .putShebang(false)

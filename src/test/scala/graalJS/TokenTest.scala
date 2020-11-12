@@ -22,7 +22,7 @@ class TokenTest extends PropSpec with Matchers {
 
     val tokenStream: TokenStream = new TokenStream
 
-    val lexer = new Lexer(src, tokenStream, false, true, false, false, true)
+    val lexer = new Lexer(src, tokenStream, false, 6, false, false, true)
 
     lexer.lexify()
 

@@ -2,17 +2,19 @@
 name := "graal-scala-examples"
 scalaVersion := "2.12.7"
 
+val graalVersion = "19.3.1"
+
 // https://mvnrepository.com/artifact/org.graalvm.sdk/graal-sdk
-libraryDependencies += "org.graalvm.sdk" % "graal-sdk" % "19.0.0"
+libraryDependencies += "org.graalvm.sdk" % "graal-sdk" % graalVersion
 
 // https://mvnrepository.com/artifact/org.graalvm.js/js
-libraryDependencies += "org.graalvm.js" % "js" % "19.0.0"
+libraryDependencies += "org.graalvm.js" % "js" % graalVersion
 
 // https://mvnrepository.com/artifact/org.graalvm.truffle/truffle-api
-libraryDependencies += "org.graalvm.truffle" % "truffle-api" % "19.0.0"
+libraryDependencies += "org.graalvm.truffle" % "truffle-api" % graalVersion
 
 //https://mvnrepository.com/artifact/org.graalvm.truffle/truffle-dsl-processor
-libraryDependencies += "org.graalvm.truffle" % "truffle-dsl-processor" % "19.0.0"
+libraryDependencies += "org.graalvm.truffle" % "truffle-dsl-processor" % graalVersion
 
 // https://mvnrepository.com/artifact/org.graalvm.tools/profiler
 libraryDependencies += "org.graalvm.tools" % "profiler" % "19.0.2"
